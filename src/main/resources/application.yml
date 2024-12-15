@@ -2,10 +2,10 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     #    ?? PC? ????? Database??? ?? ???.
-    url: jdbc:mysql://127.0.0.1:3306/intellifinance # Database?? ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: jdbc:mysql://${MY_SQL_HOST}/${DATABASE_NAME} # Database?? ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     #    mysql? ??? ??? ?? ??? ?? ???.
-    username: root
-    password: Tjddbswkd12!@ # ??? mysql ????
+    username: ${USER_NAME}
+    password: ${USER_PASSWORD} # ??? mysql ????
 
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
